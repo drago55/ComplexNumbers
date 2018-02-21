@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ComplexNumbers.iml" filepath="$PROJECT_DIR$/.idea/modules/ComplexNumbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ComplexNumbers_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ComplexNumbers_main.iml" group="ComplexNumbers" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ComplexNumbers_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ComplexNumbers_test.iml" group="ComplexNumbers" />
+    </modules>
+  </component>
+</project>
