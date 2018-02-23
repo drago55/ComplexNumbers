@@ -44,18 +44,6 @@ public class SiPrefixsMath {
     }
 
     /**
-     * Round number
-     *
-     * @param num   to be rounded
-     * @param round number of decimal places
-     * @return rounded number
-     */
-    public static final double roundNumber(double num, double round) {
-
-        return Math.round(num * round) / round;
-    }
-
-    /**
      * Calculate prefix value from spinner position
      * 10to the power of value of the spinner
      *
