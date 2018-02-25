@@ -1,7 +1,7 @@
 package complex_number;
 
 public class ComplexAlgebraic extends ComplexNumber {
-    public ComplexAlgebraic(int realNumber, int imaginaryNumber ) {
+    public ComplexAlgebraic(double realNumber, double imaginaryNumber ) {
         super(realNumber, imaginaryNumber );
     }
 

@@ -1,22 +1,44 @@
 import complex_number.ComplexBaseMath;
 import complex_number.ComplexNumber;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
+import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
 
 public class ComplexNumberTest {
 
-    ComplexNumber z1;
-    ComplexNumber z2;
-    ComplexBaseMath z3;
-    ComplexBaseMath expectedZ;
+    private static ComplexNumber z1;
+    private static ComplexNumber z2;
+    private static ComplexBaseMath z3;
+    private static ComplexBaseMath expectedZ;
 
-    @Before
-    public void initData(){
+    @BeforeClass
+    public static void initData(){
         //Context
          z1 = new ComplexNumber(1,2);
          z2 = new ComplexNumber(1,2);
+    }
+
+
+    @Test
+    public void testObjectCreation(){
+        ComplexBaseMath zExpected= new ComplexNumber(1,2);
+        assertEquals(zExpected, new ComplexNumber(1,2));
+    }
+
+
+    @Test
+    public void testObjectCreation_minusScenario(){
+        ComplexBaseMath zExpected= new ComplexNumber(-1,-2);
+        assertEquals(zExpected, new ComplexNumber(-1,-2));
+    }
+
+    @Test
+    public void testObjectCreation_zeroScenario(){
+        ComplexBaseMath zExpected= new ComplexNumber(0,0);
+        assertEquals(zExpected, new ComplexNumber(0,0));
     }
 
     @Test
@@ -62,7 +84,7 @@ public class ComplexNumberTest {
     public void testAbsoluteValue(){
         double result=z1.modulus();
         double expectedNumber= 2.2360679775 ;
-        assertEquals(expectedNumber,result,0);
+        assertEquals(expectedNumber,result,1);
     }
 
 

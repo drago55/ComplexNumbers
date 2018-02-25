@@ -12,6 +12,7 @@ public class ComplexNumber extends ComplexBaseMath {
     private double imaginaryNumber;
     private ImaginaryUnit imaginaryUnit;
 
+
     /**
      * Constructor for complex number
      *
@@ -25,6 +26,7 @@ public class ComplexNumber extends ComplexBaseMath {
         this.imaginaryNumber = imaginaryNumber;
         this.imaginaryUnit=ImaginaryUnit.I;
     }
+
 
     public double getRealNumber() {
         return realNumber;
